@@ -1,19 +1,18 @@
 #write your code here
 require 'pry'
-def countdown number
+def countdown number = 10
     while number > 0
-        puts "#{number} SECONDS(S)!"
+        puts "#{number} SECOND(S)!"
         number -= 1
     end
     "HAPPY NEW YEAR!"
 end
 
-def countdown_with_sleep another_number
+def countdown_with_sleep another_number = 10
     while another_number > 0
-        puts "#{another_number} SECONDS(S)!"
+        puts "#{another_number} SECOND(S)!"
         sleep(1)
         another_number -= 1
     end
     "HAPPY NEW YEAR!"
 end
-binding.pry
